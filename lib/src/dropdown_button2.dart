@@ -1556,7 +1556,7 @@ class DropdownButton2State<T> extends State<DropdownButton2<T>> with WidgetsBind
               boxShadow: _buttonStyle!.decoration!.boxShadow ??
                   kElevationToShadow[_buttonStyle!.elevation ?? 0],
             ),
-            padding: _buttonStyle?.padding ?? padding.resolve(Directionality.of(context)),
+            padding: EdgeInsets.only(left: 12),
             height: _buttonStyle?.height ?? (widget.isDense ? _denseButtonHeight : null),
             width: _buttonStyle?.width,
             child: Row(
